@@ -1,0 +1,192 @@
+<link href="https://fonts.googleapis.com/css?family=Orbitron|Goldman|Stalinist+One|Indie+Flower|Sacramento|Dancing+Script|Architects+Daughter|Montserrat|Playfair+Display|Roboto|Andika+New+Basic|Open+Sans" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="technical_documentation.css">
+
+<body>
+
+    <nav id="navbar">
+        <header class="header-style">HTML tipps</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Text_appearance">Text appearance</a>
+        <a class="nav-link" href="#Box_appearance">Box appearance</a>
+        <a class="nav-link" href="#Background_customisation">Background customisation</a>
+        <a class="nav-link" href="#Bezier_curves">Bezier curves</a>
+        <a class="nav-link" href="#Media_queries">Media queries</a>
+    </nav>
+
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <Header class="header-style"> Introduction</header>
+            <p> This technical documentation gives you tips on how to improve your HTML website's visibility and readability. Try any of these tricks and you can customise HTML appearance in a way, both you and your readers will love. See for yourself the
+                endless possibilities, that HTML and CSS offer you. Enjoy using these HTML tips.</p>
+        </section>
+        <section class="main-section" id="Text_appearance">
+            <header class="header-style"> Text appearance </header>
+            <p> Different tools can help you make your stand out. You can use the <code> em </code> to emphasize your text. Or you could underline important busswords using the <code> ul </code> tag. Use the <code> s </code> tag to indicate outdated information.
+                Here's an example of using all three tags on the word Buzzword in HTML:
+
+                <div class="code-box">
+                    <xmp> <em> Emphasized text (italics) </em> </xmp>
+                    <xmp> <s> Strikethrough text </s> </xmp>
+                    <xmp> <u> Underlined text </u> </xmp>
+                    <xmp> <b> Bold text </b> </xmp>
+                </div>
+
+                Try using these tags in your free code camp workspace and wou will see how easy it is, to use them. In a Browser like Chrome, the HTML-code above would be displayed similar to this:
+
+                <div class="html-box">
+                    <em> Empasized text (italics) </em> <br>
+                    <s> Strikethrough text </s> <br>
+                    <u> Underlined text </u> <br>
+                    <b> Bold text </b> <br>
+                </div>
+            </p>
+
+        </section>
+        <section class="main-section" id="Box_appearance">
+            <header class="header-style"> Box appearance </header>
+            <p> There are different methods to taylor HTML elements to blend with page concept. Let's first look at these key aspects:
+
+                <ul>
+                    <li> Padding </li>
+                    <li> Margin </li>
+                    <li> Border </li>
+                </ul>
+            </p>
+
+            <p>
+                The property <code> padding </code> allows you to set the spacing between any elements content and its edge. Here's how the <code> padding </code> property can be defined in the class <code> .set-padding </code>:
+
+                <div class="code-box">
+                    <xmp>
+                        <style>
+                            .set-padding {
+                                padding: 10px;
+                                background-color: #FF7F00;
+                            }
+                        </style>
+
+                        <main>
+                            <div class="set-padding"> This element uses padding.</div>
+                        </main>
+                    </xmp>
+                </div>
+
+                The code above would translate as follows when display in your web browser:
+
+                <div class="html-box">
+                    <div class="set-padding"> This element uses 20px padding.</div>
+                </div>
+
+                You can use both relative and absolute length units to define padding:
+
+                <ul>
+                    <li> mm (in millimeters, <b> abs. </b>) </li>
+                    <li> px (in pixels) <b> abs. </b> </li>
+                    <li> % (in percentage of parent element dim., <b> rel. </b>) </li>
+                    <li> em (in font size of the element, <b> rel. </b>) </li>
+                </ul>
+
+                Try using the property padding for your self in your element.
+
+            </p>
+        </section>
+        <section class="main-section" id="Background_customisation">
+            <header class="header-style"> Background customisation</header>
+            <p> HTML offers great ways to customise an elements background. The CSS property to be used in this context is the <code> background </code> property. You probably already know the <code> background-color </code> property. Let's look at these
+                more sophisticated methods to style our element's background:
+
+                <ul>
+                    <li> the <code> linear-gradient() </code> function</li>
+                    <li> the <code> url() </code> function</li>
+                </ul>
+            </p>
+
+            <p>
+                With the <code> linear-gradient </code> function you can set a color transition for the background element. The function has at least three arguments. Depending on the number of colors to be used in the transistion, further arguments can
+                be added:
+
+                <div class="code-box">
+                    <ol>
+                        <li><code>background: linear-gradient (gradient_direction, color 1, color 2, color 3, ...));</code></li>
+                        <li><code>background: linear-gradient(45deg, deepskyblue, lightgray, darkviolet);</code> </li>
+                    </ol>
+                </div>
+
+                The argument <code> gradient_direction </code> specifies the direction of the color transistion. The value <code> 0deg </code> results in a transition from bottom to top and the value <code> 90deg </code> in a transition from left to right.
+                Further increasing the gradient value will result in a clockwise rotation of the transition direction. Using the second list to style an element will result in the following color display:
+
+                <div class="html-box">
+                    <div class="demo-gradient"> formula from above</div>
+                </div>
+
+            </p>
+
+            <p>
+                Another useful tool when styling an element's background is the <code> url() </code> function. A texture from the <em> freecodecamp </em> website and tutorial is used in the following example:
+
+                <div class="code-box">
+                    <xmp>
+                        .demo-url{ background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png); padding: 20px; }
+                    </xmp>
+                </div>
+
+                Applying this class to an element will make its background look like in the example below:
+
+                <div class="html-box">
+                    <div class="demo-url">This element uses the texture from freecodecamp</div>
+                </div>
+
+            </p>
+        </section>
+        <section class="main-section" id="Bezier_curves">
+            <Header class="header-style"> Bezier curves</Header>
+            <p> You may have already learned about the <code> @keyframes </code> rule for animations. It is used to describe a particular animation, such as the animation <code>sample-animation</code> in the following example:
+
+                <div class="code-box">
+                    <xmp>
+                        @keyframes: sample-animation{ 0%{ background-color: blue; } 100%{ background-color: black; } }
+                    </xmp>
+                </div>
+
+                You have also learned about linking an animation to a class or id an the relevant attributes in this context:
+
+                <div class="code-box">
+                    <xmp>
+                        animation-name: example-animation; animation-duration: 5s; animation-iteration-count: 10; animation-timing-function: ease-out;
+                    </xmp>
+                </div>
+            </p>
+            <p> We will now show how to use a bezier curve to customize the movement HTML objects. Let's say that we want an object ot bounce on a suface. In this case we want the speed to be highest, when the ball is about to tough the survace. When when
+                the ball has maximum height, the speed tends to zero before inverting. The following CSS code represents this behavior for the class <code> demo-bounce </code>:
+
+                <div class="code-box">
+                    <xmp>.demo-bounce{ animation-name: bounce; animation-duration: 3s; animation-iteration-count: infinite; animation-fill-mode: both; animation-timing-function: cubic-bezier(0,0,0.58,1); height: 25px; width: 25px; border-radius: 50%; }
+                    </xmp>
+                </div>
+
+                Unfortunately, the ball is not bouncing as expected. I believe, some further study is required to set the <code> animation-timing-function </code> correctly. Here's the HTML display for the class above:
+
+                <div class="html-box">
+                    <div class="demo-bounce demo-gradient"></div>
+                </div>
+            </p>
+        </section>
+        <section class="main-section" id="Media_queries">
+            <header class="header-style"> Media queries</header>
+            <p> The last tip is on media queries. This tool can be very helpful to present to the user a different website layout according to his device. We all know the frustration of reading a regular website on our smartphone. We need to zoom in a lot
+                to be able to read the content. Media queries <code> @media </code> in your css stylesheet can be one way of adressing this issue. <code> @media </code> is used in combination with a condition, for example the screen width.
+
+                <div class="code-block">
+                    <xmp>
+                        @media (max-width: 800px){ #main-doc{ width: 100%; transition: margin-left .5s; margin: 0 0 0 20%; } }
+                    </xmp>
+                </div>
+
+                The code above shows, how <code> @media </code> is applied to the id <code> #main-doc </code>, giving it a list of attribute values in case the viewport width is smaller than 800 pixels. Many older smarphones, such as the iPhone 4 have
+                a screen width smaller than 800 pixels. Use media queries, when designing a website intended for both smartphone and regular pc users :).
+            </p>
+        </section>
+    </main>
+
+</body>

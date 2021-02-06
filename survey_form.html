@@ -1,0 +1,68 @@
+<link href="https://fonts.googleapis.com/css?family=Orbitron|Goldman|https://fonts.google.com/specimen/Stalinist+One|Indie+Flower|Sacramento|Dancing+Script|Architects+Daughter|Montserrat|Playfair+Display" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="survey_form.css">
+
+<body>
+    <h1 id="title"> Survey form:</h1>
+    <p id="description">What aspects of your free time are most important to you?</p>
+    <form id="survey-form" action="">
+        <label id="name-label" for="name">Name:</label>
+        <br>
+        <input id="name" class="textfields" type="text" name="name" placeholder="Enter your name here..." required>
+        <div class="placeholder-block"></div>
+        <label id="email-label" for="email">E-Mail:</label>
+        <br>
+        <input id="email" class="textfields" type="email" name="email" placeholder="Thanks for entering your email :)" required>
+        <div class="placeholder-block"></div>
+        <label id="number-label" for="number">Number:</label>
+        <br>
+        <input id="number" class="textfields" type="number" min="1" max="1000" name="number" placeholder="Please enter a number between 1 and 1000...">
+        <div class="placeholder-block"></div>
+
+        <label for="dropdown">Where would you prefer to spend your free time?</label>
+        <div class="placeholder-block"></div>
+        <select id="dropdown" name="dropdown" class="textfields">
+    <option class="textfields" value="" disabled selected>Choose a location...</option>
+    <option class="textfields" value="home">At home</option>
+    <option class="textfields" value="mall">In a mall</option>
+    <option class="textfields" value="pitch">On the football pitch</option>
+    <option class="textfields" value="funfair">At a funfair</option>
+    <option class="textfields" value="park">In a park</option>
+  </select>
+        <div class="placeholder-block"></div>
+
+        <p>Which of these items would you most like to take on a day off? </p>
+        <div class="checkbox-block">
+            <label for="gameboy">
+      <input id="gameboy" type="radio" value="gameboy" name="item">
+      A gameboy</label>
+            <br>
+            <label for="football">
+      <input id="football" type="radio" value="football" name="item">
+      Soccer ball</label>
+            <br>
+            <label for="book">
+      <input id="book" type="radio" value="book" name="item">
+      An interesting book</label>
+        </div>
+        <div class="placeholder-block"></div>
+
+        <p>What else do you need to have a splendit time?</p>
+        <div class="checkbox-block">
+            <label for="bicycle"><input id="bicycle" name ="other-item" value="bicycle" type="checkbox"> Bicycle </label>
+            <br>
+            <label for="ice-cream"><input id="ice-cream" name ="other-item" value="ice-cream" type="checkbox"> Ice cream </label>
+            <br>
+            <label for="best-friends"><input id="best-friends" name ="other-item" value="best-friends" type="checkbox"> My best friends </label>
+        </div>
+        <div class="placeholder-block"></div>
+
+        <label for="comments">Anything else, that you need to enjoy your day off school or work?
+      <br>
+      <div class="placeholder-block"></div>
+    <textarea id="comments" name="comments" rows="4" cols="50">
+    </textarea>
+      
+    <div class="placeholder-block"></div>
+    <button id="submit" type="submit">Submit</button>
+      <div class="placeholder-block"></div>  
+  </form>

@@ -1,0 +1,44 @@
+<style>.zentraler-text {
+    text-align: center;
+}
+
+#tribute-info {
+    width: 50vw;
+    text-align: left;
+    justify-content: center;
+    margin: auto;
+    line-height: 150%;
+}
+
+#title {
+    margin-top: 20px;
+    padding-top: 10px;
+    color: DarkSlateGray;
+    border-radius: 10px;
+}
+
+#main {
+    text-align: center;
+    background-color: Linen;
+}
+
+#image {
+    max-width: 799px;
+    width: 10%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-div {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    padding: 1vw;
+    border-radius: 5%;
+    position: relative;
+}
+
+</style>

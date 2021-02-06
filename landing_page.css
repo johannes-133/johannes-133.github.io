@@ -1,0 +1,154 @@
+main {
+    text-align: center;
+    margin-top: 4vw;
+}
+
+.font-main {
+    font-family: Playfair Display;
+    font-size: 16px;
+}
+
+.font-big {
+    font-family: Playfair Display;
+    font-size: 24px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration-line: none;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+.placeholder-block {
+    height: 10px;
+}
+
+.textinput {
+    width: 300px;
+}
+
+.parawidth {
+    width: 50vw;
+    margin: 50px auto 10px auto;
+    background-color: #FF7FFF;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.value-prop-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 80px);
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.value-icon {
+    background-color: #eddadb;
+    text-align: right;
+    padding: 10px;
+    justify-self: end;
+}
+
+.value-text {
+    background-color: #dff0ef;
+    text-align: left;
+    padding: 10px;
+    justify-self: stretch;
+    width: 70%
+}
+
+.footer-layout {
+    margin-top: 100px;
+    text-align: end;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 5vw;
+    height: 4vw;
+    width: 90vw;
+    background-color: #09a7a1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    order: 2;
+}
+
+#header-img {
+    order: 1;
+    height: 3.5vw;
+    width: auto flex 1;
+    margin-left: 0.5vw;
+    margin-right: 7.5vw;
+    border: 1px dashed black;
+    border-width: 2.5px;
+}
+
+#nav-bar {
+    order: 3;
+    width: 18vw;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #09a7a1;
+    justify-content: space-between;
+}
+
+#form {
+    padding-top: 10px;
+}
+
+#submit {
+    background-color: #09a7a1;
+    color: white;
+}
+
+#submit:hover {
+    animation-name: color-shift;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards
+}
+
+#video {
+    border-width: 5px;
+    border-color: black;
+    border-style: dashed;
+    margin-top: 10px;
+}
+
+#value-proposition {}
+
+@keyframes color-shift {
+    100% {
+        background-color: #52726f;
+    }
+}
+
+@media (max-width: 1080px) {
+    .font-main {
+        font-family: Playfair Display;
+        font-size: 12px;
+    }
+    .font-big {
+        font-family: Playfair Display;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1900px) {
+    #nav-bar {
+        width: 25vw;
+    }
+}
