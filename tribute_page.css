@@ -1,13 +1,35 @@
-<style>.zentraler-text {
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+.zentraler-text {
     text-align: center;
 }
 
 #tribute-info {
-    width: 50vw;
+    line-height: 175%;
+    font-size: 18px;
+    width: 50%;
     text-align: left;
     justify-content: center;
-    margin: auto;
-    line-height: 150%;
+    margin: 30px auto 30px auto;
+}
+
+@media (max-width: 1000px) {
+    #tribute-info {
+        width: 90%;
+    }
+}
+
+#img-caption{
+    font-style: italic;
+    padding: 20px 0 20px 0;
 }
 
 #title {
@@ -15,11 +37,22 @@
     padding-top: 10px;
     color: DarkSlateGray;
     border-radius: 10px;
+    font-family: "Sawarabi Mincho", 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 20px;
+    padding-top: 10px;
+    color: DarkSlateGray;
+    font-family: "Sawarabi Mincho", 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #main {
     text-align: center;
-    background-color: Linen;
+    background-color: Azure;
 }
 
 #image {
@@ -31,14 +64,22 @@
     margin-right: auto;
 }
 
+@media(max-width: 1000px){
+    #image{
+        width: 25%;
+    }
+}
+
 #img-div {
-    width: 90vw;
+    width: 99%;
     background-color: white;
     margin: auto;
     text-align: center;
-    padding: 1vw;
-    border-radius: 5%;
     position: relative;
 }
 
-</style>
+.footer1{
+    padding: 20px 0 40px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
