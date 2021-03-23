@@ -1,67 +1,80 @@
-<link href="https://fonts.googleapis.com/css?family=Orbitron|Goldman|Stalinist+One|Indie+Flower|Sacramento|Dancing+Script|Architects+Daughter|Montserrat|Playfair+Display|Roboto|Andika+New+Basic|Open+Sans|Noto+Sans+JP|Lato" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-<link rel="stylesheet" href="personal_portfolio.css">
+<head>
+  
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Goldman|Stalinist+One|Indie+Flower|Sacramento|Dancing+Script|Architects+Daughter|Montserrat|Playfair+Display|Roboto|Andika+New+Basic|Open+Sans|Noto+Sans+JP|Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="personal_portfolio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  
+</head>
 
 <body>
 
-    <!-- Start Nav -->
-    <nav id="navbar">
-        <a href=#welcome-section class="nav-links">About</a>
-        <a href="#projects" class="nav-links">Work</a>
-        <a href="#contact" class="nav-links">Contact</a>
-        <div class="placeholder"></div>
-    </nav>
-    <!-- End Nav -->
+  <!-- Start Nav -->
+  <nav id="navbar">
+  <a href=#welcome-section class="nav-links">About</a>
+  <a href="#projects" class="nav-links">Work</a>
+  <a href="#contact" class="nav-links">Contact</a>
+  <div class="placeholder"></div>
+  </nav>
+ 
+  
+  
+  <main>      
+    <!-- Start Welcome -->
+    <Section id="welcome-section">  
+    <h1> Hi, my name is Johannes</h1>
+      <p class="olive-text">I recently earned the FreeCodeCamp <em>Responsive Web Design</em> certification</p>
+    </Section>
+    
+    <!-- Start Project Section -->
+    <section id="projects">
+      
+      <p class="projects-header"> Here are my first steps at HTML, CSS and JavaScript libraries:</p>
+      <div class="project-tile-container">    
+        
+                  <a class="project-tile" href="https://codepen.io/johannes133/full/wvoEeyG" target="_blank"> 
+              <img class="project-image" src="https://raw.githubusercontent.com/johannes-133/sample-repository/main/Quote_Machine.PNG">   
+                    <p><u>Random Quote Machine</u></p> 
+                    <div class="technologies-used">using HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, jQuery  </div>
+          </a>
+        
+          <a class="project-tile" href="https://codepen.io/johannes133/full/MWbMzGV" target="_blank">
+              <img class="project-image" src="https://raw.githubusercontent.com/johannes-133/sample-repository/main/Markdown-Previewer.PNG">   
+            <p><u>Markdown Previewer</u></p>
+            <div class="technologies-used">using HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, React <i class="fab fa-react"></i> </div>
+          </a>
+        
+          <a class="project-tile" href="https://codepen.io/johannes133/full/KKgNyWX"   target="_blank"> 
+            <img class="project-image" src="https://raw.githubusercontent.com/johannes-133/sample-repository/main/Documentation.PNG">  
+            <p><u>HTML Documentation</u></p>
+            <div class="technologies-used">using HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i></div>
+          </a>
+        
+          <a class="project-tile" href="https://codepen.io/johannes133/full/VwKexpV" target="_blank"> 
+              <img class="project-image" src="https://raw.githubusercontent.com/johannes-133/sample-repository/main/Landing_Page.PNG">   
+            <p><u>Product Landing Page</u></p>
+            <div class="technologies-used">using HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i></div>
+          </a>
+        
 
-    <main>
-
-        <!-- Start Welcome -->
-        <Section id="welcome-section">
-            <h1> Hi, my name is Johannes</h1>
-            <p class="olive-text">I recently earned the FreeCodeCamp <em>Responsive Web Design</em> certification</p>
-        </Section>
-        <!-- End Welcome -->
-
-        <!-- Start Project Section -->
-        <section id="projects">
-            <p class="projects-header"> These are my first steps at HTML and CSS:</p>
-            <div class="project-tile-container">
-                <a class="project-tile" href="technical_documentation.html" target="_blank">
-                    <img class="project-image" src="https://raw.githubusercontent.com/johannes-133/sample-repository/main/Documentation.PNG">
-                    <p> HTML Tips Documentation </p>
-                </a>
-                <a class="project-tile" href="landing_page.html" target="_blank">
-                    <img class="project-image" src="https://raw.githubusercontent.com/johannes-133/sample-repository/main/Landing_Page.PNG">
-                    <p>Product Landing Page</p>
-                </a>
-                <a class="project-tile" href="survey_form.html" target="_blank">
-                    <img class="project-image" src="https://raw.githubusercontent.com/johannes-133/sample-repository/main/Survey.PNG">
-                    <p>Survey form</p>
-                </a>
-                <a class="project-tile" href="tribute_page.html" target="_blank">
-                    <img class="project-image" src="https://raw.githubusercontent.com/johannes-133/sample-repository/main/Tribute.PNG">
-                    <p>Tribute page </p>
-                </a>
-            </div>
-            <a href="https://codepen.io/johannes133" target="_blank" class="all-projects-button">           All projects... 
+      </div>
+      <a href="https://codepen.io/johannes133" target="_blank" class="all-projects-button">           All projects... 
       </a>
-        </section>
-        <!-- End Projects Section -->
-
-        <!-- Start contact section -->
-        <section id="contact">
-            <h1>Please use the following to get in touch with me:</h1>
-            <div class="contact-box">
-                <a class="other-links" id="profile-link" href="https://github.com/johannes-133" target="_blank">
-                    <i class="fab fa-github"></i> my Github profile</a>
-                <a class="other-links" id="profile-link" href="https://www.linkedin.com/in/johannes-von-kries-09b8391a/" target="_blank">
-                    <i class="fab fa-linkedin"></i> my LinkedIn profile</a>
-            </div>
-
-        </section>
-        <!-- End contact section -->
-
-    </main>
-    <footer>
-    </footer>
+    </section>
+    
+    <!-- Start contact section -->
+    <section id="contact">
+      <h2 class="contacts-header">How to get in touch with me:</h2>
+      <div class="contact-box">
+      <a class="other-links" id="profile-link" href="https://github.com/johannes-133" target="_blank" >
+        My <i class="fab fa-github"></i> Github profile</a>
+      <a class="other-links" id="profile-link" href="https://www.linkedin.com/in/johannes-von-kries-09b8391a/" target="_blank" >
+        My <i class="fab fa-linkedin"></i> LinkedIn profile</a>
+      </div>
+ 
+    </section>
+    <!-- End contact section -->
+    
+  </main>
+  <footer>
+  </footer>
 </body>
