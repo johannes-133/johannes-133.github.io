@@ -23,19 +23,24 @@ h1{
   color: white;
 }
 .contacts-header {
-  
   color: white;
   font-weight: 600;
   font-size: 28px;
   margin: 0px;
   padding: 0px;
-  
 }
 .pink-text{
   color: var(--color-pink);
 }
 .olive-text{
   color: var(--color-olive);
+}
+.my-bullet-list {
+  color: var(--color-olive);
+  list-style: none;
+  font-style: italic;
+  text-align: left;
+  line-height: 200%;
 }
 @media (min-width: 1080px) {
   h1{
@@ -81,7 +86,7 @@ h1{
   }
 .project-tile-container{
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 }
@@ -138,7 +143,7 @@ h1{
   background: var(--color-purple);
   width: 100%;
   height: 70px;
-  text-align: right;
+  text-align:right;
 }
 
 #welcome-section{
@@ -149,7 +154,6 @@ h1{
   justify-content: center;
   align-items: center;
   background: linear-gradient(90deg, hsl(256.6, 5%, 27.1%), hsl(256.6, 5%, 10%));
-  text-align:center;
   color: black;
   margin-bottom: -16px;
 }
@@ -168,7 +172,7 @@ h1{
   justify-content: space-evenly;
   width: 50%;
   margin: 50px auto 10px auto;
-  justify-content: space-around: 
+  justify-content: space-around; 
 }
 .link-text{
   
@@ -185,11 +189,11 @@ h1{
 .other-links:hover{
   color: var(--color-yellow);
 }
-  .technologies-used{
+ .technologies-used {
     font-size: 20px;
     font-style: italic;
     padding-bottom: 10px;
-  }
+ }
   
 @keyframes purple-button{
   100%{
