@@ -37,7 +37,7 @@ h1{
 }
 .my-bullet-list {
   color: var(--color-olive);
-  list-style: none;
+  list-style: "-  ";
   font-style: italic;
   text-align: left;
   line-height: 200%;
