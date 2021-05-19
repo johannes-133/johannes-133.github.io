@@ -1,7 +1,5 @@
-body{
-  font-family: Noto Sans JP, monospace;
-  margin: -8px;
-  font-weight: 400;
+* {
+  box-sizing: border-box;
   --color-purple: #2F9599;
   --color-purple-light: #439fa3;
   --color-pink: #EC2049   ;
@@ -13,7 +11,13 @@ body{
   --color-olive: #68955b;
   --color-olive-light: #78a06c;
   --color-red:  #EC2049;
-  --color-dark: hsl(182.3,5%,22.2%);;
+  --color-dark: hsl(182.3,5%,22.2%);
+}
+
+body{
+  font-family: Noto Sans JP, monospace;
+  font-weight: 400;
+  margin: 0;
 }
 h1{
   font-weight: 800;
@@ -141,15 +145,14 @@ h1{
   justify-content: flex-end;
   align-items: stretch;
   background: var(--color-purple);
-  width: 100%;
+  width: 100vw;
   height: 70px;
   text-align:right;
 }
 
 #welcome-section{
-  height:100vh;
-  width: 100vw;
   display: flex;
+  height: 110vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -162,7 +165,6 @@ h1{
   text-align:center;
   padding: 100px 2px;
   height: 100vh;
-  width: 100vw;
   background: linear-gradient(135deg, var(--color-olive), var(--color-olive-light));
 }
 
